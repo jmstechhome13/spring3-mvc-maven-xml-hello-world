@@ -1,9 +1,9 @@
 # RUN me where kubectl is available,& make sure to replace account,region etc
 #
-ACCOUNT=041221872505
+ACCOUNT=288826100962
 REGION=ap-south-1
 SECRET_NAME=${REGION}-ecr-registry
-EMAIL=ybmadhu404@gmail.com
+EMAIL=ramreddysrr123@gmail.com
 
 TOKEN=`aws ecr --region=$REGION get-authorization-token --output text --query authorizationData[].authorizationToken | base64 -d | cut -d: -f2`
 
